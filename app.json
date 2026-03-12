@@ -1,0 +1,41 @@
+{
+  "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "name": "EDI Module",
+  "publisher": "EDI Solutions",
+  "version": "1.0.0.0",
+  "brief": "EDI Module for Microsoft Dynamics 365 Business Central",
+  "description": "A fully functioning EDI (Electronic Data Interchange) module supporting X12 and EDIFACT standards with complete inbound/outbound document processing, trading partner management, field mapping, logging, and automation.",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [
+    {
+      "id": "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
+      "publisher": "Microsoft",
+      "name": "System Application",
+      "version": "22.0.0.0"
+    },
+    {
+      "id": "437dbf0e-84ff-417a-965d-ed2bb9650972",
+      "publisher": "Microsoft",
+      "name": "Base Application",
+      "version": "22.0.0.0"
+    }
+  ],
+  "screenshots": [],
+  "platform": "22.0.0.0",
+  "application": "22.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50199
+    }
+  ],
+  "runtime": "12.0",
+  "target": "Cloud",
+  "features": [
+    "TranslationFile"
+  ]
+}
