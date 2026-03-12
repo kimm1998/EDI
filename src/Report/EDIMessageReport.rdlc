@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSetDataSource">
+      <ConnectionProperties>
+        <DataProvider>AL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:DataSourceID>a6fad1d2-2b07-4bb7-b4c3-1c6d8c2c4f3e</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Query>
+        <DataSourceName>DataSetDataSource</DataSourceName>
+        <CommandText />
+      </Query>
+      <Fields>
+        <Field Name="EntryNo">
+          <DataField>EntryNo</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="MessageID">
+          <DataField>MessageID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TradingPartnerCode">
+          <DataField>TradingPartnerCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DocumentTypeCode">
+          <DataField>DocumentTypeCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Direction">
+          <DataField>Direction</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EDIStandard">
+          <DataField>EDIStandard</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Status">
+          <DataField>Status</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FileName">
+          <DataField>FileName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BCDocumentNo">
+          <DataField>BCDocumentNo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TransactionDate">
+          <DataField>TransactionDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="ErrorMessage">
+          <DataField>ErrorMessage</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CreatedDateTime">
+          <DataField>CreatedDateTime</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="CreatedBy">
+          <DataField>CreatedBy</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CompanyName">
+          <DataField>CompanyName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ReportTitle">
+          <DataField>ReportTitle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PrintedDateTime">
+          <DataField>PrintedDateTime</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Tablix Name="Table1">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>1.5cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>3cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>3cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>2cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>2cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>2.5cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>3cm</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>0.6cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="EntryNoHeader">
+                          <CanGrow>true</CanGrow>
+                          <Value>Entry No.</Value>
+                          <Style>
+                            <FontWeight>Bold</FontWeight>
+                            <BackgroundColor>LightGray</BackgroundColor>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TradingPartnerHeader">
+                          <CanGrow>true</CanGrow>
+                          <Value>Trading Partner</Value>
+                          <Style>
+                            <FontWeight>Bold</FontWeight>
+                            <BackgroundColor>LightGray</BackgroundColor>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="DocTypeHeader">
+                          <CanGrow>true</CanGrow>
+                          <Value>Document Type</Value>
+                          <Style>
+                            <FontWeight>Bold</FontWeight>
+                            <BackgroundColor>LightGray</BackgroundColor>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="DirectionHeader">
+                          <CanGrow>true</CanGrow>
+                          <Value>Direction</Value>
+                          <Style>
+                            <FontWeight>Bold</FontWeight>
+                            <BackgroundColor>LightGray</BackgroundColor>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="StandardHeader">
+                          <CanGrow>true</CanGrow>
+                          <Value>Standard</Value>
+                          <Style>
+                            <FontWeight>Bold</FontWeight>
+                            <BackgroundColor>LightGray</BackgroundColor>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="StatusHeader">
+                          <CanGrow>true</CanGrow>
+                          <Value>Status</Value>
+                          <Style>
+                            <FontWeight>Bold</FontWeight>
+                            <BackgroundColor>LightGray</BackgroundColor>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="BCDocNoHeader">
+                          <CanGrow>true</CanGrow>
+                          <Value>BC Document No.</Value>
+                          <Style>
+                            <FontWeight>Bold</FontWeight>
+                            <BackgroundColor>LightGray</BackgroundColor>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.6cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="EntryNoData">
+                          <CanGrow>true</CanGrow>
+                          <Value>=Fields!EntryNo.Value</Value>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TradingPartnerData">
+                          <CanGrow>true</CanGrow>
+                          <Value>=Fields!TradingPartnerCode.Value</Value>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="DocTypeData">
+                          <CanGrow>true</CanGrow>
+                          <Value>=Fields!DocumentTypeCode.Value</Value>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="DirectionData">
+                          <CanGrow>true</CanGrow>
+                          <Value>=Fields!Direction.Value</Value>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="StandardData">
+                          <CanGrow>true</CanGrow>
+                          <Value>=Fields!EDIStandard.Value</Value>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="StatusData">
+                          <CanGrow>true</CanGrow>
+                          <Value>=Fields!Status.Value</Value>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="BCDocNoData">
+                          <CanGrow>true</CanGrow>
+                          <Value>=Fields!BCDocumentNo.Value</Value>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <KeepWithGroup>After</KeepWithGroup>
+                </TablixMember>
+                <TablixMember>
+                  <Group Name="DataSet_Result_Details_Group">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!EntryNo.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>DataSet_Result</DataSetName>
+            <Top>1cm</Top>
+            <Left>0cm</Left>
+            <Height>1.2cm</Height>
+            <Width>17cm</Width>
+          </Tablix>
+          <Textbox Name="ReportTitleTextbox">
+            <CanGrow>true</CanGrow>
+            <Value>=Fields!ReportTitle.Value</Value>
+            <Top>0cm</Top>
+            <Left>0cm</Left>
+            <Height>0.8cm</Height>
+            <Width>17cm</Width>
+            <Style>
+              <FontSize>14pt</FontSize>
+              <FontWeight>Bold</FontWeight>
+            </Style>
+          </Textbox>
+        </ReportItems>
+        <Height>5cm</Height>
+        <Style />
+      </Body>
+      <Width>17cm</Width>
+      <Page>
+        <PageHeight>29.7cm</PageHeight>
+        <PageWidth>21cm</PageWidth>
+        <LeftMargin>2cm</LeftMargin>
+        <RightMargin>2cm</RightMargin>
+        <TopMargin>1cm</TopMargin>
+        <BottomMargin>1cm</BottomMargin>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>b7d2e5f8-3a1c-4d6e-9b0f-2c8a7e4d5f1a</rd:ReportID>
+</Report>
